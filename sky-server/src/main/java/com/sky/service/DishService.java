@@ -11,6 +11,7 @@ import java.util.List;
 public interface DishService {
     /**
      * 新增菜品和对应的口味
+     *
      * @param dishDTO
      */
     public void saveWithFlavor(DishDTO dishDTO);
@@ -26,4 +27,12 @@ public interface DishService {
     void startOrStop(Integer status, Long id);
 
     List<Dish> list(Long categoryId);
+
+    /**
+     * 条件查询菜品和口味
+     *
+     * @param dish
+     * @return
+     */
+    List<DishVO> listWithFlavor(Dish dish);
 }
