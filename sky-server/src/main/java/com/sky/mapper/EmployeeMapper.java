@@ -9,13 +9,12 @@ import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
-import java.util.List;
-
 @Mapper
 public interface EmployeeMapper {
 
     /**
      * 根据用户名查询员工
+     *
      * @param username
      * @return
      */
@@ -35,6 +34,7 @@ public interface EmployeeMapper {
 
     /**
      * 根据id查询员工信息
+     *
      * @param id
      * @return
      */
