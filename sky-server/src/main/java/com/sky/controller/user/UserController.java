@@ -44,6 +44,7 @@ public class UserController {
         //微信登录
         User user = userService.wxLogin(userLoginDTO);//后绪步骤实现
 
+
         //为微信用户生成jwt令牌
         Map<String, Object> claims = new HashMap<>();
         claims.put(JwtClaimsConstant.USER_ID, user.getId());
